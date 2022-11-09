@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Poppins:ital,wght@0,500;0,600;0,800;1,300;1,500;1,700&display=swap");
+
+// Fonts
+$popping-font: "Poppins", sans-serif;
+
+$primary_font: "Nosifer Caps";
+
+// font-family: "Nosifer Caps";
+// font-style: normal;
+// font-weight: 800;
+// font-size: 24px;
+// line-height: 111px;
+// /* identical to box height, or 462% */
+
+// letter-spacing: 0.1em;
+
+// color: #ffffff;
+
+// Colors
+
+$dark: rgb(29, 29, 29);
+$light: #fff;
+$header_color: #4a2462;
+$primary-color: #4621b1;
+
+$linearBackground: linear-gradient(
+  180deg,
+  #4621b1 0%,
+  rgba(70, 33, 177, 0) 100%
+);
+
+// spacing
+
+$spacing-md: 16px;
+$spacing-lg: 32px;
+
+// border-radius
+
+$borderRadius: 12px;
+
+// Header Height
+
+$headerHeight: 100px;
+
+// mixins
+
+@mixin breakpoint($point) {
+  @if $point == md {
+    //768 px
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      @content;
+    }
+  }
+  @if $point == lg {
+    @media (min-width: 1025px) {
+      @content;
+    }
+  }
+}
