@@ -13,12 +13,13 @@ const Navbar = () => {
 
   return (
     <header className={`${styles.header} container-fluid`}>
-      <div className={styles.header_content}>
+      <div className={`${styles.header_content} container`}>
         <Link href="/">
           <Image
             src="/images/portfolio_logo.png"
             width={70}
             height={50}
+            alt="Portfolio Logo"
             className={styles.header_content_logo}
           ></Image>
         </Link>
