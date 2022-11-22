@@ -1,0 +1,92 @@
+@import "../../styles/variables.scss";
+
+.contact_container {
+  padding-bottom: 70px;
+}
+
+.contact_info_div {
+  margin-top: 50px;
+  border: 1px solid grey;
+  box-shadow: 2px 2px 12px 6px rgba(7, 5, 5, 0.25);
+  background: linear-gradient(
+    180deg,
+    rgba(20, 114, 102, 0.75) 0%,
+    rgba(147, 126, 54, 0) 154.14%
+  );
+  padding: 40px 40px;
+  text-align: center;
+  color: #000;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 4px rgba(202, 202, 202, 0.25);
+  letter-spacing: 0.8px;
+  border-radius: 15px;
+  @include breakpoint(lg) {
+    padding: 50px 80px;
+  }
+  @include breakpoint(md) {
+    padding: 50px 80px;
+  }
+}
+
+.form_element {
+  margin-bottom: 20px;
+}
+
+.form_input {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1.2rem;
+  font-family: "Nokora", sans-serif;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+  &:focus {
+    border: 1px solid rgb(136, 136, 136);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.form_input::placeholder {
+  color: rgb(185, 185, 185);
+}
+
+.form_input {
+  width: 100%;
+  margin-top: 25px;
+  padding: 15px 20px;
+  border: 1px solid rgb(223, 223, 223);
+  border-radius: 5px;
+  outline: none;
+  font-size: 1.2rem;
+  font-family: "Nokora", sans-serif;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+  &:focus {
+    border: 1px solid rgb(136, 136, 136);
+    box-shadow: 0px 0px 10px 2px rgba(136, 136, 136, 0.25);
+  }
+}
+
+.contact_title {
+  text-align: center;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 4px rgba(202, 202, 202, 0.25);
+  padding-top: 60px;
+  letter-spacing: 0.8px;
+}
+
+.text_area {
+  width: 100%;
+  height: 200px;
+  margin-top: 25px;
+  padding-top: 10px;
+  padding-left: 22px;
+  font-size: 0.9rem;
+  border-radius: 15px;
+  font-style: $primary_font;
+  color: rgb(31, 31, 31);
+}
