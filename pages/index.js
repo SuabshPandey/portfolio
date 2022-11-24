@@ -41,7 +41,6 @@ export default function Home() {
         <div className={styles.contact_container_fluid_div}>
           <Contact />
         </div>
-
       </main>
     </div>
   );

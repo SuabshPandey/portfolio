@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import styles from "./Card.module.scss";
 
 const Card = ({ experience }) => {
@@ -19,7 +20,8 @@ const Card = ({ experience }) => {
           <p className={`${styles.experience_card_text} card-text`}>{title}</p>
           <p className={styles.experience_card_sub_title}>{date}</p>
           <p className={styles.experience_card_description}>
-            {description.substring(0, 100)}... <a href="#">Read More</a>
+          
+            {description.substring(0, 100)}... <Link href="/experience">Read More</Link>
           </p>
         </div>
       </div>

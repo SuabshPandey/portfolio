@@ -1,3 +1,5 @@
 {
-    "workbench.colorTheme": "Hack The Box"
+    "workbench.colorTheme": "Hack The Box",
+    "workbench.activityBar.visible": true,
+    "workbench.preferredDarkColorTheme": "Hack The Box"
 }
