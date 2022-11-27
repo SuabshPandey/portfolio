@@ -41,8 +41,14 @@ const Contact = () => {
             </div>
             <div className={`${styles.contact_info_row} row`}>
               <div className={`${styles.contact_info_col} col-lg-12`}>
-                <textarea placeholder="Leave a message" className={styles.text_area}></textarea>
+                <textarea
+                  placeholder="Leave a message"
+                  className={styles.text_area}
+                ></textarea>
               </div>
+            </div>
+            <div className={styles.btn_div}>
+              <button className={`${styles.submit_btn}`}>Submit</button>
             </div>
           </form>
         </div>
