@@ -1,9 +1,55 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import Link from "next/link";
+import emailjs from "@emailjs/browser";
 import { Icon } from "@iconify/react";
 import styles from "../styles/contact.module.scss";
+import { Alert } from "react-bootstrap";
+
+const Result = () => {
+  const [result, showResult] = useState(true);
+
+  if (result) {
+    return (
+      <>
+        <Alert variant="success" onClose={() => showResult(false)} dismissible>
+          <p>Message Received!. I will reach you out within 48 hours.</p>
+        </Alert>
+      </>
+    );
+  }
+};
 
 const Contact = () => {
+  const [result, showResult] = useState(false);
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_hfzfiqs",
+        "template_kc2ex4u",
+        form.current,
+        "user_n8v7CMPb5v6hYugjyoXxD"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("Email sent successfully!");
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    showResult(true);
+  };
+
+  setTimeout(() => {
+    showResult(false);
+  }, 5000);
+
   return (
     <>
       <div className={`${styles.contact_main_div} container-fluid`}>
@@ -97,26 +143,38 @@ const Contact = () => {
                 </div>
               </div>
             </div>
+
             <div className={`${styles.contact_right_div} col-lg-6 col-md-12`}>
-              <form className={`${styles.form_element}`} action="#">
+              <div className="row">{result ? <Result /> : null}</div>
+              <form
+                ref={form}
+                onSubmit={sendEmail}
+                className={`${styles.form_element}`}
+              >
                 <div className={`${styles.contact_info_row} row`}>
                   <div className={`${styles.contact_info_col} col-lg-6`}>
                     <input
                       type="text"
                       placeholder="Full Name"
+                      name="full_name"
+                      required
                       className={`${styles.form_input} form-control`}
                     />
                   </div>
                   <div className={`${styles.contact_info_col} col-lg-6`}>
                     <input
                       type="email"
+                      name="email"
                       placeholder="Email"
+                      required
                       className={`${styles.form_input} form-control`}
                     />
                   </div>
                   <div className={`${styles.contact_info_col} col-lg-6`}>
                     <input
                       type="number"
+                      name="phone"
+                      required
                       placeholder="Phone Number"
                       className={`${styles.form_input} form-control`}
                     />
@@ -124,7 +182,9 @@ const Contact = () => {
                   <div className={`${styles.contact_info_col} col-lg-6`}>
                     <input
                       type="text"
+                      name="address"
                       placeholder="Address"
+                      required
                       className={`${styles.form_input} form-control`}
                     />
                   </div>
@@ -132,13 +192,17 @@ const Contact = () => {
                 <div className={`${styles.contact_info_row} row`}>
                   <div className={`${styles.contact_info_col} col-lg-12`}>
                     <textarea
+                      name="message"
                       placeholder="Leave a message"
                       className={styles.text_area}
+                      required
                     ></textarea>
                   </div>
                 </div>
                 <div className={styles.btn_div}>
-                  <button className={`${styles.submit_btn}`}>Submit</button>
+                  <button type="submit" className={`${styles.submit_btn}`}>
+                    Send
+                  </button>
                 </div>
               </form>
             </div>

@@ -91,7 +91,7 @@
   color: rgb(31, 31, 31);
 }
 
-.btn_div{
+.btn_div {
   text-align: left;
 }
 
@@ -124,4 +124,11 @@
   @include breakpoint(md) {
     margin-left: 0px;
   }
+}
+
+.message_div {
+  text-align: center;
+  margin-top: 20px;
+  color: #fff !important;
+  font-size: 1rem;
 }
