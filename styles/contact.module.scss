@@ -63,9 +63,12 @@
 
 .contact_social_links {
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
+  gap: 35px;
+  margin-right: 0px;
+  padding-right: 0px;
 }
 
 .contact_link {
@@ -73,7 +76,7 @@
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
-  margin-right: 50px;
+  // margin-right: 10px;
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;

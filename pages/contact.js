@@ -35,7 +35,7 @@ const Contact = () => {
                     className={styles.contact_icon}
                     icon="material-symbols:call"
                   />
-                  +977 9808039867, +977 9866397480
+                  +977 9808039867, 9866397480
                 </p>
                 <p className="contact_para">
                   <Icon
@@ -44,7 +44,7 @@ const Contact = () => {
                   />
                   itsmesubashpandey3@gmail.com
                 </p>
-                
+
                 <div className={styles.contact_social_links}>
                   <p className="contact_para">
                     <a
