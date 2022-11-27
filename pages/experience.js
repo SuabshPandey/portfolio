@@ -1,6 +1,6 @@
 import React from "react";
-import Card from "../components/common/Card";
-import experienceList from "../components/home/experienceList";
+import Certificate from "../components/common/Certificate";
+import certificateList from "../components/home/certificateList";
 import styles from "../styles/experience.module.scss";
 
 const Experience = () => {
@@ -9,37 +9,31 @@ const Experience = () => {
       <div className={`${styles.experience_page_div} container-fluid`}>
         <div className={`${styles.experience_page_container} container`}>
           <div className={`${styles.experience_description}`}>
-            <h1 className={styles.experience_title}>
-              Talking About My Education
-            </h1>
+            <h1 className={styles.experience_title}>About My Education</h1>
             <div className={`${styles.experience_content_div} row`}>
               <div className={`${styles.experience_col} col-lg-8 col-md-8`}>
                 <p className={styles.experience_content}>
-                  I have completed 4 years Bachelors Program in Information
-                  Technology. Lorem ipsum dolor sit amet consectetur,
-                  adipisicing elit. Ullam, iste. Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Consequatur, id. Lorem ipsum
-                  dolor sit amet, consectetur adipisicing elit. Ratione,
-                  debitis. Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Accusamus, assumenda? Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Delectus, modi quas reiciendis
-                  quam iusto quisquam neque, odio mollitia velit tenetur sit,
-                  impedit itaque deleniti. <br /> <br /> Tenetur adipisci libero
-                  qui quia molestias enim molestiae similique obcaecati rerum a?
-                  Doloribus nobis fugit cumque obcaecati ipsam totam natus porro
-                  odio nam aliquid facere, commodi mollitia labore deserunt
-                  beatae hic sunt ex amet quibusdam aut quis sit et fugiat!
-                  Molestiae accusamus quia architecto voluptatem quaerat, culpa
-                  minus voluptatum sequi incidunt deserunt vel dolorum nostrum
-                  ducimus hic ipsam illo suscipit consequatur. Et reprehenderit
-                  nam soluta distinctio velit, quia provident culpa possimus
-                  sapiente facere nostrum nemo aperiam? Lorem, ipsum dolor sit
-                  amet consectetur adipisicing elit. Dolorem voluptate nemo
-                  dolor quas itaque tempore tenetur eius aliquam debitis
-                  doloribus!
+                  Talking about my college, Nepal College of Information
+                  Technology – NCIT, established in 2001, runs Pokhara
+                  University-affiliated Bachelor’s and Master’s programs – BE,
+                  BBA, BCA, ME, MSc & MCIS. Our Engineering Degrees are approved
+                  by the Nepal Engineering Council. It has produced over a
+                  thousand engineers since its establishment. It is one of the
+                  best IT College in Nepal.
+                  <br /> <br />
+                  I am a recent IT graduate of Nepal College of Information
+                  Technology located in Lalitpur, Nepal, where I earned my
+                  degree in Bachelors Of Engineering in Information Technology
+                  (BE-IT).I started in 2018 and completed in 2022. I am now a
+                  proud holder of a 4-year degree and I am looking to put it to
+                  use in the field of IT. Spending four years at this college
+                  has been an amazing experience of my life.
+                  <br /> <br />
                 </p>
               </div>
-              <div className={`${styles.experience_col_img} col-lg-4 col-md-4`}>
+              <div
+                className={`${styles.experience_col_desp} col-lg-4 col-md-4`}
+              >
                 <div className={`${styles.college_img_div}`}>
                   <img className={styles.college_img} src="/images/ncit.jpg" />
                 </div>
@@ -62,24 +56,33 @@ const Experience = () => {
 
           <div className={`${styles.experience_tech_div} row`}>
             <div className={`${styles.experience_tech_col} col-lg-4 col-md-6`}>
-              <h1 className={`${styles.stack_title}`}>
-                Frontend Tools/Frameworks
-              </h1>
+              <h1 className={`${styles.stack_title}`}>Frontend Technologies</h1>
+
               <ul className={styles.experience_list}>
-                <li className={styles.frontend_list_items}>HTML5</li>
-                <li className={styles.frontend_list_items}>CSS3</li>
-                <li className={styles.frontend_list_items}>Bootstrap</li>
-                <li className={styles.frontend_list_items}>Javascript</li>
-                <li className={styles.frontend_list_items}>Jquery</li>
-                <li className={styles.frontend_list_items}>React JS</li>
-                <li className={styles.frontend_list_items}>Next Js</li>
-                <li className={styles.frontend_list_items}>Figma</li>
+                <div className="row">
+                  <div className="col-lg-6 col-sm-6">
+                    <li className={`${styles.frontend_list_items}`}>HTML5</li>
+                    <li className={`${styles.frontend_list_items}`}>CSS3</li>
+                    <li className={`${styles.frontend_list_items}`}>
+                      Bootstrap
+                    </li>
+                    <li className={`${styles.frontend_list_items}`}>
+                      Javascript
+                    </li>
+                  </div>
+                  <div className="col-lg-6 col-sm-2">
+                    <li className={`${styles.frontend_list_items}`}>Jquery</li>
+                    <li className={`${styles.frontend_list_items}`}>
+                      React JS
+                    </li>
+                    <li className={`${styles.frontend_list_items}`}>Next Js</li>
+                    <li className={`${styles.frontend_list_items}`}>Figma</li>
+                  </div>
+                </div>
               </ul>
             </div>
             <div className={`${styles.experience_tech_col} col-lg-4 col-md-6`}>
-              <h1 className={`${styles.stack_title}`}>
-                Backend Tools/Frameworks
-              </h1>
+              <h1 className={`${styles.stack_title}`}>Backend Technologies</h1>
               <ul className={styles.experience_list}>
                 <li className={styles.backend_list_items}>Node Js</li>
                 <li className={styles.backend_list_items}>Express Js</li>
@@ -116,6 +119,9 @@ const Experience = () => {
                   <p className={styles.college_name}>
                     <i> Deerhold Nepal Pvt. Ltd</i>
                   </p>
+                  <p className={styles.college_name}>
+                    <i> Sifal, Kathmandu</i>
+                  </p>
                   <p className={styles.college_date}>
                     <i> ( March 2022 - October 2022 )</i>
                   </p>
@@ -125,28 +131,38 @@ const Experience = () => {
                     Deerhold Nepal Pvt.Ltd
                   </h2>
                   <p className={styles.experience_content}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quae. Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Quisquam, quae. Lorem ipsum
-                    dolor sit amet consectetur adipisicing elit. Quisquam, quae.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam,
+                    Deerhold is a healthcare product, services and analytics
+                    company based in Lexington, Massachusetts, USA with a major
+                    offshore office in Nepal and development center in Tokyo,
+                    Japan.
+                    <br /> <br />I became a fellow at this company after being
+                    chosen for the 6 months fellowship program. I was allocated
+                    to this fellowship program as a React/Node Js Developer. I
+                    gained knowledge about typescript, project management tool
+                    (JIRA), and most importantly how to collaborate with a team.
+                    This fellowship program caters to both non-technical and
+                    technical skills. Being a part of this fellowship program
+                    has been an incredible experience.
                   </p>
                 </div>
               </div>
-              <hr />
+              <hr className={styles.hr_line} />
               <div className={`${styles.experience_content_div} row`}>
                 <div className={`${styles.experience_col} col-lg-8 col-md-8`}>
                   <h2 className={styles.company_title}>Creatu Developers</h2>
                   <p className={styles.experience_content}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quae. Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Quisquam, quae. Lorem ipsum
-                    dolor sit amet consectetur adipisicing elit. Quisquam, quae.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam,
+                    Creatu Developers was established in 2016 and since its
+                    establishment, it is one of the well renowned IT service
+                    providing company in Nepal.
+                    <br /> <br />I began my career with this company as a
+                    two-month internship. During my internship, I became
+                    acquainted with the javascript library React JS.Following
+                    the completion of my internship, I was promoted to React Js
+                    Developer and assigned to client projects.
+                    <br /> <br />
+                    Along with the projects, I am improving my teamwork and
+                    research skills. It was an incredible experience to work for
+                    this company for 8 months.
                   </p>
                 </div>
 
@@ -166,7 +182,24 @@ const Experience = () => {
                   </p>
                 </div>
               </div>
+              <hr className={styles.hr_line} />
             </div>
+          </div>
+
+          <div
+            className={`${styles.container_certificate_container} container`}
+          >
+            <h1 className={styles.experience_title}>
+              Training and Certifications
+            </h1>
+
+            {certificateList.map((list, index) => {
+              return (
+                <div className={`${styles.training_row} row`} key={index}>
+                  <Certificate list={list} />
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
