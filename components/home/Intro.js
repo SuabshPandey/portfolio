@@ -18,13 +18,21 @@ const Intro = () => {
               <p className={styles.sub_content}>
                 I am a web developer with 2 years of experience in developing
                 and designing websites. I am adept at HTML, CSS, SCSS,
-                Bootstrap, Javascript, Jquery and frameworks like React JS, Next Js
-                Node.js. <br /> I offer end-to-end solution for all your website
-                development needs.
+                Bootstrap, Javascript, Jquery and frameworks like React JS, Next
+                Js Node.js. <br /> I offer end-to-end solution for all your
+                website development needs.
               </p>
-              <button className={styles.home_download_button}>
-                Download CV
-              </button>
+              <a
+                className={styles.download_link}
+                href="/pdf/cv.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className={styles.home_download_button}>
+                  {" "}
+                  Download CV
+                </button>
+              </a>
             </div>
           </div>
           <div className={`${styles.home_right_div} col-lg-6 col-md-6`}>

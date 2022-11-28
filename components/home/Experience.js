@@ -4,6 +4,7 @@ import styles from "./experience.module.scss";
 import experienceList from "./experienceList";
 
 const Experience = () => {
+  // const []
   return (
     <>
       <div className={`${styles.experience_container_div} container`}>

@@ -23,7 +23,7 @@ const Footer = () => {
       </div>
       <div className={`${styles.copyright_container_fluid} `}>
         <h1 className={styles.copyright_title}>
-          Copyright {new Date().getFullYear()}{" "} Subash Pandey
+          © Copyright {new Date().getFullYear()} Subash Pandey
         </h1>
       </div>
     </>

@@ -21,7 +21,7 @@ const Card = ({ experience }) => {
           <p className={styles.experience_card_sub_title}>{date}</p>
           <p className={styles.experience_card_description}>
           
-            {description.substring(0, 100)}... <Link href="/experience">Read More</Link>
+            {description.substring(0, 100)}... <Link className={styles.read_more} href="/experience">Read More</Link>
           </p>
         </div>
       </div>

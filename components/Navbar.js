@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import { AiOutlineBars, AiOutlineClose } from "react-icons/ai";
 import styles from "./Navbar.module.scss";
 
 const Navbar = () => {
+  const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleHandler = () => {
@@ -31,17 +33,43 @@ const Navbar = () => {
         >
           <ul className={styles.header_content_nav_ul}>
             <li>
-              <Link href="/">Home</Link>
+              <Link
+                className={router.asPath == "/" ? styles.active_link : ""}
+                href="/"
+              >
+                Home
+              </Link>
             </li>
 
             <li>
-              <Link href="/experience">Experience</Link>
+              <Link
+                className={
+                  router.asPath == "/experience" ? styles.active_link : ""
+                }
+                href="/experience"
+              >
+                Experience
+              </Link>
             </li>
             <li>
-              <Link href="/projects">Projects</Link>
+              <Link
+                className={
+                  router.asPath == "/projects" ? styles.active_link : ""
+                }
+                href="/projects"
+              >
+                Projects
+              </Link>
             </li>
             <li>
-              <Link href="/contact">Contact</Link>
+              <Link
+                className={
+                  router.asPath == "/contact" ? styles.active_link : ""
+                }
+                href="/contact"
+              >
+                Contact
+              </Link>
             </li>
           </ul>
         </nav>

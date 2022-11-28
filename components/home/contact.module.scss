@@ -96,14 +96,11 @@
 }
 
 .submit_btn {
-  background: linear-gradient(
-    180deg,
-    #ad4490 -145%,
-    rgba(88, 35, 123, 0.33) 185%
-  );
+  background: transparent;
   color: #fff;
-  border: 1px solid rgb(78, 74, 74);
-  border-radius: 15px;
+  border: 1px solid rgb(255, 255, 255);
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
   padding: 15px 100px;
   font-size: 16px;
   font-weight: 600;

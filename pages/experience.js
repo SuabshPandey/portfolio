@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import Certificate from "../components/common/Certificate";
+import { Icon } from "@iconify/react";
 import certificateList from "../components/home/certificateList";
 import styles from "../styles/experience.module.scss";
 
 const Experience = () => {
+  const [expanded, setExpanded] = useState(false);
+
+  const data = expanded ? certificateList : certificateList.slice(0, 3);
+
+  const handleExpand = () => {
+    setExpanded(!expanded);
+  };
+
   return (
     <>
       <div className={`${styles.experience_page_div} container-fluid`}>
@@ -193,13 +202,28 @@ const Experience = () => {
               Training and Certifications
             </h1>
 
-            {certificateList.map((list, index) => {
+            {data.map((list, index) => {
               return (
                 <div className={`${styles.training_row} row`} key={index}>
                   <Certificate list={list} />
                 </div>
               );
             })}
+
+            <div className={styles.show_more_btn_div}>
+              <button className={styles.show_more_btn} onClick={handleExpand}>
+                {expanded ? (
+                  <>
+                    Show Less <Icon className={styles.show_more_icon} icon="ic:baseline-expand-less" />{" "}
+                  </>
+                ) : (
+                  <>
+                    {" "}
+                    Show More <Icon className={styles.show_more_icon} icon="ic:baseline-expand-more" />{" "}
+                  </>
+                )}
+              </button>
+            </div>
           </div>
         </div>
       </div>

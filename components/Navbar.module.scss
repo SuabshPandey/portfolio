@@ -6,7 +6,6 @@
   width: 100%;
   height: 70px;
   padding: 0.6rem 1.5rem;
-
   font-family: "Nosifer";
   font-style: normal;
   font-weight: 400;
@@ -156,4 +155,12 @@
 
 // .header_content_nav_ul{
 
-// }
+// }{
+
+.active_link {
+  @include breakpoint(lg) {
+    background: rgba($light, 0.7);
+    border-radius: calc(0.5rem + #{$spacing-md});
+    background: linear linear-gradiant(rgba($light, 0.1), rgba($light, 0.2));
+  }
+}
