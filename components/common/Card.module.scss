@@ -5,6 +5,11 @@
   background: #e4e2e2;
   color: #000;
   box-shadow: 2px 2px 12px 6px rgba(7, 5, 5, 0.25);
+  @include breakpoint(lg) {
+    font-weight: 500;
+  font-size: 1rem;
+
+  }
 }
 
 .card_img {
@@ -29,6 +34,11 @@
   padding: 15px 0px;
   font-weight: 800;
   letter-spacing: 0.8px;
+  @include breakpoint(lg) {
+    font-weight: 800;
+  font-size: 1.8rem;
+
+  }
 }
 
 .read_more {
