@@ -4,10 +4,15 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { AiOutlineBars, AiOutlineClose } from "react-icons/ai";
 import styles from "./Navbar.module.scss";
+import { useEffect } from "react";
 
 const Navbar = () => {
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
+  // const [size, setSize] = useState({
+  //   width: undefined,
+  //   height: undefined,
+  // });
 
   const toggleHandler = () => {
     setMenuOpen((p) => !p);
@@ -34,6 +39,7 @@ const Navbar = () => {
           <ul className={styles.header_content_nav_ul}>
             <li>
               <Link
+                onClick={toggleHandler}
                 className={router.asPath == "/" ? styles.active_link : ""}
                 href="/"
               >
@@ -43,6 +49,7 @@ const Navbar = () => {
 
             <li>
               <Link
+                onClick={toggleHandler}
                 className={
                   router.asPath == "/experience" ? styles.active_link : ""
                 }
@@ -53,6 +60,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
+                onClick={toggleHandler}
                 className={
                   router.asPath == "/projects" ? styles.active_link : ""
                 }
@@ -63,6 +71,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
+                onClick={toggleHandler}
                 className={
                   router.asPath == "/contact" ? styles.active_link : ""
                 }
