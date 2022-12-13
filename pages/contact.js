@@ -94,6 +94,7 @@ const Contact = () => {
                 <div className={styles.contact_social_links}>
                   <p className="contact_para">
                     <a
+                    rel="noreferrer"
                       href=" https://www.linkedin.com/in/subash-pandey-ab429a1a1/"
                       target="_blank"
                       className={styles.contact_link}
