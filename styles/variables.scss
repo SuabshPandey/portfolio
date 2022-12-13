@@ -54,7 +54,7 @@ $headerHeight: 100px;
     }
   }
   @if $point == lg {
-    @media (min-width: 1024px) and (max-width: 1440px) {
+    @media (min-width: 1024px) {
       @content;
     }
   }
