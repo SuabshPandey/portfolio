@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import styles from "./projectcard.module.scss";
@@ -8,7 +9,9 @@ const ProjectCard = ({ project }) => {
     <>
       <div className={`${styles.card_main_div} card`}>
         <div className={`${styles.card_img_div}`}>
-          <img
+          <Image
+            width={400}
+            height={400}
             src={image}
             className={`${styles.card_img} card-img-top`}
             alt={name}

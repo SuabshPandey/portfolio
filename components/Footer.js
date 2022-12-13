@@ -8,7 +8,7 @@ const Footer = () => {
       <div className={`${styles.footer_main_div} container-fluid`}>
         <div className={`${styles.footer_container} container`}>
           <div className={styles.footer_content}>
-            <h1 className={styles.footer_title}>Let's Connect </h1>
+            <h1 className={styles.footer_title}>Let&apos;s Connect </h1>
             <div className={styles.social_links_div}>
               <Icon className={styles.social_icons} icon="mdi:gmail" />
               <Icon

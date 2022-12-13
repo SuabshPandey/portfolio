@@ -10,7 +10,7 @@ const Intro = () => {
           <div className={`${styles.home_left_div} col-lg-6 col-md-6`}>
             <div className={styles.home_left_div_content}>
               <h1 className={styles.home_left_div_content_h1}>
-                Hi, I'm{" "}
+                Hi, I&apos;m{" "}
                 <span className={styles.home_left_div_content_span}>
                   Subash Pandey
                 </span>

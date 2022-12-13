@@ -65,7 +65,7 @@ const Contact = () => {
                 <h1 className={styles.contact_left_title}>Get In Touch</h1>
                 <p className={styles.contact_left_subtitle}>
                   Want to work together or have a question? Want to build high
-                  quality projects or products ? Let's work together!
+                  quality projects or products ? Let&apos;s work together!
                 </p>
               </div>
               <div className={styles.contact_info}>
@@ -106,6 +106,7 @@ const Contact = () => {
                   </p>
                   <p className="contact_para">
                     <a
+                      rel="noreferrer"
                       href="https://github.com/SuabshPandey"
                       target="_blank"
                       className={styles.contact_link}
@@ -118,6 +119,7 @@ const Contact = () => {
                   </p>
                   <p className="contact_para">
                     <a
+                      rel="noreferrer"
                       href="https://www.facebook.com/subash.pandey.58118/"
                       target="_blank"
                       className={styles.contact_link}
@@ -130,6 +132,7 @@ const Contact = () => {
                   </p>
                   <p className="contact_para">
                     <a
+                      rel="noreferrer"
                       href="https://www.instagram.com/__subash_rock1__/"
                       target="_blank"
                       className={styles.contact_link}

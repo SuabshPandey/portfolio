@@ -3,6 +3,7 @@ import Certificate from "../components/common/Certificate";
 import { Icon } from "@iconify/react";
 import certificateList from "../components/home/certificateList";
 import styles from "../styles/experience.module.scss";
+import Image from "next/image";
 
 const Experience = () => {
   const [expanded, setExpanded] = useState(false);
@@ -44,7 +45,13 @@ const Experience = () => {
                 className={`${styles.experience_col_desp} col-lg-4 col-md-4`}
               >
                 <div className={`${styles.college_img_div}`}>
-                  <img className={styles.college_img} src="/images/ncit.jpg" />
+                  <Image
+                    height={400}
+                    width={400}
+                    className={styles.college_img}
+                    src="/images/ncit.jpg"
+                    alt="college_img"
+                  />
                 </div>
                 <p className={styles.college_name}>
                   <i> Nepal College of Information Technology(NCIT)</i>
@@ -100,7 +107,7 @@ const Experience = () => {
               </ul>
             </div>
             <div className={`${styles.experience_tech_col} col-lg-4 col-md-6`}>
-              <h1 className={`${styles.stack_title}`}>Database/API's</h1>
+              <h1 className={`${styles.stack_title}`}>Database/API&apos;s</h1>
               <ul className={styles.experience_list}>
                 <li className={styles.database_list_items}>MongoDB</li>
                 <li className={styles.database_list_items}>Mongoose</li>
@@ -119,7 +126,9 @@ const Experience = () => {
               <div className={`${styles.experience_content_div} row`}>
                 <div className={`${styles.experience_col} col-lg-4 col-md-4`}>
                   <div className={styles.experince_img_div}>
-                    <img
+                    <Image
+                      height={400}
+                      width={400}
                       src="/images/skills/dh.jpg"
                       className={styles.experience_img}
                       alt="deerhold"
@@ -177,10 +186,12 @@ const Experience = () => {
 
                 <div className={`${styles.experience_col} col-lg-4 col-md-4`}>
                   <div className={styles.experince_img_div}>
-                    <img
+                    <Image
+                      height={400}
+                      width={400}
                       src="/images/skills/cd.png"
                       className={styles.experience_img}
-                      alt="deerhold"
+                      alt="cd_logo"
                     />
                   </div>
                   <p className={styles.college_name}>
@@ -214,12 +225,20 @@ const Experience = () => {
               <button className={styles.show_more_btn} onClick={handleExpand}>
                 {expanded ? (
                   <>
-                    Show Less <Icon className={styles.show_more_icon} icon="ic:baseline-expand-less" />{" "}
+                    Show Less{" "}
+                    <Icon
+                      className={styles.show_more_icon}
+                      icon="ic:baseline-expand-less"
+                    />{" "}
                   </>
                 ) : (
                   <>
                     {" "}
-                    Show More <Icon className={styles.show_more_icon} icon="ic:baseline-expand-more" />{" "}
+                    Show More{" "}
+                    <Icon
+                      className={styles.show_more_icon}
+                      icon="ic:baseline-expand-more"
+                    />{" "}
                   </>
                 )}
               </button>
