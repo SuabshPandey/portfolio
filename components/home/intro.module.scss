@@ -20,7 +20,11 @@
   font-weight: 800;
   text-transform: capitalize;
   text-align: justify;
-  font-style: $popping-font;
+  font-style: $baloo_font;
+  @include breakpoint(lg) {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
   @include breakpoint(md) {
     font-size: 1.6rem;
     letter-spacing: 2px;
@@ -30,11 +34,16 @@
   color: rgb(255, 255, 255);
   letter-spacing: 1px;
   line-height: 1.5;
-  font-style: $popping-font;
+  font-style: $baloo_font;
+  font-weight: bold;
   font-size: 15px;
   text-align: justify;
   @include breakpoint(md) {
     font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  @include breakpoint(lg) {
+    font-size: 1.1rem;
     letter-spacing: 1px;
   }
 }
