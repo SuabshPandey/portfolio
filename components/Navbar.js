@@ -9,10 +9,6 @@ import { useEffect } from "react";
 const Navbar = () => {
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
-  // const [size, setSize] = useState({
-  //   width: undefined,
-  //   height: undefined,
-  // });
 
   const toggleHandler = () => {
     setMenuOpen((p) => !p);
