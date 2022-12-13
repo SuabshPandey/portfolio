@@ -19,6 +19,7 @@
 
 .experience_tech_div {
   margin-bottom: 40px;
+  // text-align: center;
 }
 
 .experience_title {
@@ -45,7 +46,7 @@
   @include breakpoint(lg) {
     text-align: left;
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 
@@ -62,14 +63,26 @@
 .stack_title {
   font-size: 1rem;
   margin-top: 40px;
+  // text-align: center;
   margin-bottom: 40px;
   @include breakpoint(lg) {
     font-size: 1.6rem;
   }
 }
 
-// .experience_list {
-// }
+.experience_list {
+  list-style: none;
+}
+
+.experience_tech_col {
+  @include breakpoint(lg) {
+    text-align: center;
+  }
+}
+
+.frontend_list_items {
+  text-align: left;
+}
 
 .experience_content_div {
   margin-top: 40px;

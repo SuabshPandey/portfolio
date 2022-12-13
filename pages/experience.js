@@ -77,22 +77,26 @@ const Experience = () => {
               <ul className={styles.experience_list}>
                 <div className="row">
                   <div className="col-lg-6 col-sm-6">
-                    <li className={`${styles.frontend_list_items}`}>HTML5</li>
-                    <li className={`${styles.frontend_list_items}`}>CSS3</li>
+                    <li className={`${styles.frontend_list_items}`}>- HTML5</li>
+                    <li className={`${styles.frontend_list_items}`}>- CSS3</li>
                     <li className={`${styles.frontend_list_items}`}>
-                      Bootstrap
+                      - Bootstrap
                     </li>
                     <li className={`${styles.frontend_list_items}`}>
-                      Javascript
+                      - Javascript
                     </li>
                   </div>
                   <div className="col-lg-6 col-sm-2">
-                    <li className={`${styles.frontend_list_items}`}>Jquery</li>
                     <li className={`${styles.frontend_list_items}`}>
-                      React JS
+                      - Jquery
                     </li>
-                    <li className={`${styles.frontend_list_items}`}>Next Js</li>
-                    <li className={`${styles.frontend_list_items}`}>Figma</li>
+                    <li className={`${styles.frontend_list_items}`}>
+                      - React JS
+                    </li>
+                    <li className={`${styles.frontend_list_items}`}>
+                      - Next Js
+                    </li>
+                    <li className={`${styles.frontend_list_items}`}>- Figma</li>
                   </div>
                 </div>
               </ul>
@@ -100,20 +104,22 @@ const Experience = () => {
             <div className={`${styles.experience_tech_col} col-lg-4 col-md-6`}>
               <h1 className={`${styles.stack_title}`}>Backend Technologies</h1>
               <ul className={styles.experience_list}>
-                <li className={styles.backend_list_items}>Node Js</li>
-                <li className={styles.backend_list_items}>Express Js</li>
-                <li className={styles.backend_list_items}>Embedded JS (EJS)</li>
-                <li className={styles.backend_list_items}>Python</li>
+                <li className={styles.backend_list_items}>- Node Js</li>
+                <li className={styles.backend_list_items}>- Express Js</li>
+                <li className={styles.backend_list_items}>
+                  - Embedded JS (EJS)
+                </li>
+                <li className={styles.backend_list_items}>- Python</li>
               </ul>
             </div>
             <div className={`${styles.experience_tech_col} col-lg-4 col-md-6`}>
-              <h1 className={`${styles.stack_title}`}>Database/API&apos;s</h1>
+              <h1 className={`${styles.stack_title}`}>- Database/API&apos;s</h1>
               <ul className={styles.experience_list}>
-                <li className={styles.database_list_items}>MongoDB</li>
-                <li className={styles.database_list_items}>Mongoose</li>
-                <li className={styles.database_list_items}>MySQL</li>
-                <li className={styles.database_list_items}>Sequalize</li>
-                <li className={styles.database_list_items}>RESTful API</li>
+                <li className={styles.database_list_items}>- MongoDB</li>
+                <li className={styles.database_list_items}>- Mongoose</li>
+                <li className={styles.database_list_items}>- MySQL</li>
+                <li className={styles.database_list_items}>- Sequalize</li>
+                <li className={styles.database_list_items}>- RESTful API</li>
               </ul>
             </div>
           </div>
