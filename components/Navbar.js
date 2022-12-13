@@ -9,10 +9,33 @@ import { useEffect } from "react";
 const Navbar = () => {
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [size, setSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
 
   const toggleHandler = () => {
     setMenuOpen((p) => !p);
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    if (size.width > 1024 && menuOpen) {
+      setMenuOpen(false);
+    }
+  }, [size.width, menuOpen]);
 
   return (
     <header className={`${styles.header} container-fluid`}>
@@ -29,7 +52,7 @@ const Navbar = () => {
 
         <nav
           className={`${styles.header_content_nav} ${
-            menuOpen ? styles.isMenu : ""
+            menuOpen && size.width < 1024 ? styles.isMenu : ""
           } `}
         >
           <ul className={styles.header_content_nav_ul}>
